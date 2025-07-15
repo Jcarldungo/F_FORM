@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Customer Info Form | Aura Essence</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+     <header>
+    <div class="logo">
+      <img src="images/Capture.png" alt="Aura Essence Logo" />
+      <div>
+        <h1>Aura Essence</h1>
+        <p class="tagline">Scented to Perfection</p>
+      </div>
+    </div>
+    </header>
+
+  <div class="container">
+    <!-- FORM AREA -->
+    <div class="form-box">
+      <h2>Customer Information</h2>
+      <form id="customerForm">
+        <label>First Name:</label>
+        <input type="text" name="firstName" required />
+
+        <label>Last Name:</label>
+        <input type="text" name="lastName" required />
+
+        <label>Gender:</label>
+        <div class="radio-group">
+          <label><input type="radio" name="gender" value="Male" required /> Male</label>
+          <label><input type="radio" name="gender" value="Female" /> Female</label>
+          <label><input type="radio" name="gender" value="Other" /> Other</label>
+        </div>
+
+        <label>Address:</label>
+        <textarea name="address" rows="2" required></textarea>
+
+        <label>Contact Number:</label>
+        <input type="tel" name="contact" required />
+
+        <label>Email Address:</label>
+        <input type="email" name="email" required />
+
+        <label>Date of Birth:</label>
+        <input type="date" name="dob" required />
+
+        <label>Username:</label>
+        <input type="text" name="username" required />
+
+        <label>Password:</label>
+        <input type="password" name="password" required />
+
+        <div class="buttons">
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- DISPLAY AREA -->
+    <div class="result-box">
+      <h2>Submitted Info</h2>
+      <div id="result"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
